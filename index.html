@@ -29,6 +29,17 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<script>
+  // Wait for the page to load, then trigger the "About" link click after 2 seconds
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      const aboutLink = document.querySelector('a[href="#about"]');
+      if (aboutLink) {
+        aboutLink.click();
+      }
+    }, 2000); // 2000 milliseconds = 2 seconds
+  });
+</script>
 
 <body>
 
@@ -43,8 +54,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link " href="#header">Home</a></li>
-          <li><a class="nav-link active "  href="#about">About</a></li>
+          <li><a class="nav-link" href="#header">Home</a></li>
+          <li><a class="nav-link active" href="#about">About</a></li>
           <li><a class="nav-link" href="#resume">Resume</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -61,8 +72,7 @@
       </div>
 
     </div>
-  </header><!-- End Header -->
-
+</header><!-- End Header -->
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
 
@@ -435,14 +445,6 @@
             </ul>
             </p>
           </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>B.tech, Computer Science Engineering</h4>
-            <h5>2013 - 2017</h5>
-            <p><em>Sree Narayana Gurukulam College Of Engineering,Ernakulam</em></p>
-            <p>successfully completed 2 Android projects and passed out with CGPA 6.1</p>
-          </div>
           <div class="resume-item">
             <h4>Higher Secondary-Plus two</h4>
             <h5>2011 - 2013</h5>
@@ -454,6 +456,17 @@
             <h5>1999 - 2011</h5>
             <p><em>Mahatma Gandhi Public School(CBSE),Ernakulam</em></p>
             <p>Aggregate Marks:84%</p>
+          </div>
+          <div class="resume-item">
+            <h4>Technical Skills</h4>
+            <ul>
+              <li><strong>Frontend:</strong> React, JavaScript, Tailwind CSS, HTML5, CSS3, HBS, Redux Toolkit, EJS, Framer Motion</li>
+              <li><strong>Backend:</strong> Node.js, Express.js, Mongoose, RESTful APIs, Microservices, TypeScript, GraphQL, Prisma ORM, MongoDB, NoSQL, SQL (Basics), OOPS</li>
+              <li><strong>DevOps & Cloud:</strong> Docker, Kubernetes, RabbitMQ, CI/CD, GitHub Actions, AWS (EC2, S3, SQS), GCP (Pub/Sub), Azure</li>
+              <li><strong>Deployment & Tools:</strong> NGINX, PM2, DigitalOcean (DOKS), Git, GitHub, Postman</li>
+              <li><strong>Others:</strong> Redis, OAuth 2.0, Authentication Flows, Database Schema Design, Agile Methodology</li>
+              <li><strong>Problem Solving:</strong> Proficient with Data Structures & Algorithms including Array, String, LinkedList, Stack, Queue, HashMap, Trie, Heap, Tree, Graph</li>
+            </ul>
           </div>
         </div>
         <div class="col-lg-6">
